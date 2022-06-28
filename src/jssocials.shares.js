@@ -137,13 +137,21 @@
             countUrl: ""
         },
 
-	sms: {
+	    sms: {
             label: "SMS",
             logo: "fa fa-comments-o",
             shareUrl: "sms:{delimiter}body={text} {url}",
             delimiter: "?",
             countUrl: "",
             shareIn: "top"
+        },
+        
+        copy: {
+            label: "Copy",
+            logo: "fa fa-copy",
+            shareUrl: "javascript:(function() { window.prompt('Copy to clipboard: Ctrl+C, Enter', '{url}'); return false; })()",
+            countUrl: "",
+            shareIn: "self"
         }
 
     });
